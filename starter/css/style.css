@@ -54,7 +54,7 @@ body {
 
 .text-box {
     position: absolute;
-    /* sonst sieht das optisch wegen der Abschrägung so aus, als ob die Box zu weit unten steht */
+    /* sonst sieht das optisch wegen der Abschrägung so aus, als ob die Box mit den Überschriften zu weit unten steht */
     top: 40%;
     left: 50%;
     /* damit ist die Box 50% relativ auf die eigene Position horizontal und vertikal verschoben: */
@@ -72,6 +72,8 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
 }
 
 .heading-primary-sub {
@@ -81,3 +83,22 @@ body {
     letter-spacing: 17.4px;
 }
 
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+
+    }
+
+}
